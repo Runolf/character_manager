@@ -4,16 +4,21 @@ import Characters from './Components/Characters/Characters';
 import CharacterDetails from './Components/Characters/CharacterDetails';
 import NotFound from './Components/Pages/notFound';
 
+const style = {
+    margin: "1rem",
+    textDecoration: "none",
+    color: 'white'
+}
 
 const Routeur = () => {
     return (  
         <Fragment>
             <BrowserRouter>
-            <nav>
-                <Link to="/">
+            <nav className="nav-router">
+                <Link to="/" style={style}>
                     home
                 </Link> {" "}
-                <Link to="/characters">
+                <Link to="/characters" style={style}>
                     myCharacters
                 </Link>
             </nav>

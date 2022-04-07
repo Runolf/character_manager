@@ -1,0 +1,16 @@
+.paginationContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.paginationContainer ul li{
+    list-style-type: none;
+    display: block;
+}
+
+.paginationContainer ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+}

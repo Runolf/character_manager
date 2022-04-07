@@ -33,6 +33,7 @@ const Characters = () => {
     return (
         <Fragment>
             <h1>My characters</h1>
+            <Pagination elementPerPage={elementPerPage} totalElement={characters.length} paginate={paginate} />
             <div style={{display:"flex", 
                         flexDirection: "row",
                         flexWrap:"wrap",
