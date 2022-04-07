@@ -11,7 +11,7 @@ class TheOneApi {
                     "Content-Type": "application/json"
                 }),
             });
-    
+            
             return response.json();
                
         } catch (error) {
@@ -28,7 +28,6 @@ class TheOneApi {
                     "Content-Type": "application/json"
                 }),
             });
-
             return  response.json();
         } catch (error) {
             

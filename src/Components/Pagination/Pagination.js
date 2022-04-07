@@ -7,8 +7,6 @@ const Pagination = ({elementPerPage, totalElement, paginate}) => {
     for(let i = 1; i <= Math.ceil(totalElement / elementPerPage); i++){
         pageNumbers.push(i);
     }
-
-
     
     return (<Fragment>
         <nav className="paginationContainer">

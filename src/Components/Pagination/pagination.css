@@ -1,16 +1,29 @@
+.paginationContainer{
+    text-align: center;
+}
 .paginationContainer ul {
     display: flex;
+    width: 70%;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin-left: 12%;
 }
 
 
 .paginationContainer ul li{
     list-style-type: none;
-    display: block;
 }
 
 .paginationContainer ul li a{
     text-decoration: none;
     color: blanchedalmond;
+    border: 1px solid #ddd;
+    display: block;
+    width: 2rem;
+}
+
+.paginationContainer ul li a:hover {
+    background-color: grey;
 }
