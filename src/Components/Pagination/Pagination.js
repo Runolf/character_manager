@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import './Pagination.css';
+import './pagination.css';
 
 const Pagination = ({elementPerPage, totalElement, paginate}) => {
     const pageNumbers = [];
@@ -7,8 +7,6 @@ const Pagination = ({elementPerPage, totalElement, paginate}) => {
     for(let i = 1; i <= Math.ceil(totalElement / elementPerPage); i++){
         pageNumbers.push(i);
     }
-
-
     
     return (<Fragment>
         <nav className='navContainer'>
