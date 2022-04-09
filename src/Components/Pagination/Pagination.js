@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import './pagination.css';
+import './Pagination.css';
 
 const Pagination = ({elementPerPage, totalElement, paginate}) => {
     const pageNumbers = [];
