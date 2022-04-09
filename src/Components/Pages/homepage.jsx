@@ -7,7 +7,7 @@ const Homepage = () => {
     const [isGoodUser, setIsGoodUser] = useState();
 
     useEffect(() => {
-        let isGood = (sessionStorage.getItem('isGoodUser') == "true")?true:false;
+        let isGood = (sessionStorage.getItem('isGoodUser') === "true")?true:false;
         setIsGoodUser(isGood);
     }, [])
 

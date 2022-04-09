@@ -8,7 +8,6 @@ const Characters = () => {
 
     const [characters, setCharacters] = useState([]);
     const [valueSubmit, setValueSubmit] = useState("");
-    const [objSearch, setObjSearch] = useState(null);
 
     //for pagination
     const [loading, setLoading] = useState(false);
@@ -22,9 +21,11 @@ const Characters = () => {
         .then(data => {
             setCharacters(data.docs)
         })*/
-        setCharacters(MockChar);
+        setCharacters(
+            MockChar.filter((character) => character.firstname.includes(valueSubmit))
+        );
         setLoading(false);
-    },[]);
+    },[valueSubmit]);
 
     if(loading) return <h2>loading...</h2>;
 
@@ -36,23 +37,7 @@ const Characters = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     const handleSearchCharacter = (e) => {
-        // console.log(e.target.value);
         setValueSubmit(e.target.value);
-        
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        
-        
-        const essai = currentElement.filter((obj) => {
-            return obj.name === valueSubmit;
-        });
-        
-        console.log(essai);
-
-        setObjSearch(essai);
-        
     }
 
     return (
@@ -67,23 +52,20 @@ const Characters = () => {
                     name="searchCharacter"
                     id="searchCharacter"
                     onChange={handleSearchCharacter}
+                    placeholder="Search a character by his firstname"
                 />
-
-                <button onClick={handleSubmit} type="button">submit</button>
             </form>
-
-            {objSearch != null ? 
-                <CharactersInfo character={objSearch} />
-                :
-                <p>nothing</p>
-            }
 
             <div
             className="characterListSmartphone"
             >
-                {currentElement.map((char) => {
+                {currentElement.length !== 0?
+                    currentElement.map((char) => {
                         return <CharactersInfo key={char.id} character={char} />
-                    })}
+                    }) : <p>No character found</p>
+
+                }
+ 
             </div>
             
         </Fragment>

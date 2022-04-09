@@ -1,4 +1,4 @@
-import React , {Fragment, useEffect, useState} from 'react';
+import React , {Fragment, useState} from 'react';
 import Users from '../../mock-datas/mock-users.json';
 
 
@@ -50,9 +50,7 @@ const Connect = (props) => {
         );
         
         if(connectUser !== undefined) {
-            let test = isUserExists(connectUser);
-            //console.log(test);
-        
+            isUserExists(connectUser);
         }
 
 

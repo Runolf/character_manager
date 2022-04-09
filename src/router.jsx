@@ -26,7 +26,7 @@ const Routeur = () => {
                     home
                 </Link> {" "}
 
-                {sessionStorage.getItem('isGoodUser') == "true" &&
+                {sessionStorage.getItem('isGoodUser') === "true" &&
                     <Fragment>
                         <Link to="/characters" style={style}>
                             myCharacters
