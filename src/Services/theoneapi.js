@@ -1,5 +1,6 @@
 const url = "https://the-one-api.dev/v2/";
 const bearer = "Bearer FdOHkBGLCc2PWl_eUb7Y";
+
 class TheOneApi {
     
     static async getAllBooks(){

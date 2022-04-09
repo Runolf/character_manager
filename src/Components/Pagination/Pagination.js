@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import './Pagination.css';
 
 const Pagination = ({elementPerPage, totalElement, paginate}) => {
     const pageNumbers = [];
@@ -10,8 +11,8 @@ const Pagination = ({elementPerPage, totalElement, paginate}) => {
 
     
     return (<Fragment>
-        <nav>
-            <ul>
+        <nav className='navContainer'>
+            <ul className='navNumbers'>
                 {pageNumbers.map(number => (
                     <li key={number}>
                         <a onClick={() => paginate(number)} href='#' >

@@ -4,3 +4,11 @@
     margin: 2%;
     padding: 1%;
 }
+
+.characterListSmartphone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
