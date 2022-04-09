@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 2,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 3,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    }, 
+    {
+        "id": 4,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 5,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 6,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 7,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 8,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 9,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 10,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 11,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 12,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },    
+    {
+        "id": 13,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 14,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 15,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 16,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 17,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 18,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 19,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 20,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 21,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 22,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 23,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 24,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },    
+    {
+        "id": 25,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 26,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 27,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 28,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 29,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 30,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 31,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 32,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 33,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },    
+    {
+        "id": 34,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 35,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 36,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },
+    {
+        "id": 37,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 38,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 39,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },    
+    {
+        "id": 40,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 41,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {
+        "id": 42,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    },    
+    {
+        "id": 43,
+        "name": "Eleden",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-741"
+    },
+    {
+        "id": 44,
+        "name": "Arthur",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-92-411"
+    },
+    {   
+        "id": 45,
+        "name": "Altus",
+        "race": "Ring", 
+        "gender": "Male",
+        "realm": "Artoria",
+        "birth": "RE789-14-741"
+    }
+]

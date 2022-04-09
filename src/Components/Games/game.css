@@ -1,0 +1,35 @@
+.gameInfoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-left: 33%;
+}
+
+.gameInfo{
+    background-color: darkslategray;
+    width: 20%;
+    margin: 2%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 1000px){ 
+    .gameInfoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-items: center;
+
+    }
+    
+    .gameInfo{
+        background-color: darkslategray;
+        padding-left: 15%;
+        padding-right: 30%;
+        font-size: smaller;
+        white-space: nowrap;
+        overflow: scroll;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import Theoneapi from "../../Services/theoneapi";
+// import Theoneapi from "../../Services/theoneapi";
 import CharactersInfo from './CharactersInfo';
 import Pagination from '../Pagination/Pagination';
 import MockChar from '../../mock-datas/mock-characters.json';
@@ -82,7 +82,7 @@ const Characters = () => {
             className="characterListSmartphone"
             >
                 {currentElement.map((char) => {
-                        return <CharactersInfo key={char._id} character={char} />
+                        return <CharactersInfo key={char.id} character={char} />
                     })}
             </div>
             

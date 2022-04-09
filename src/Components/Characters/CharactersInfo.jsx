@@ -20,11 +20,12 @@ const CharactersInfo = (props) => {
     return (
         <Fragment>
             <div className='charactersInfoCard'>
-                <h3>{character.name}</h3>
+                <h2>{character.firstname + " " + character.lastname} </h2>
+                <h4>{character.job}</h4>
                 <p>{character.race}</p>
                 <p>{character.gender}</p>
-                <p>{character.birth}</p>
-                <p>{character.realm}</p>
+                <p>{character.age} year </p>
+                <p>{character.from}</p>
             </div>    
         </Fragment>
     );
