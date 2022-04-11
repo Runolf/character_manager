@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "player": "me",
         "firstname": "Vigo",
         "lastname": "Morell", 
         "gender": "Male",
@@ -13,6 +14,7 @@
     },
     {
         "id": 2,
+        "player": "me",
         "firstname": "Danaayn",
         "lastname": "?", 
         "gender": "Male",
@@ -22,5 +24,44 @@
         "age": "35",
         "background" : "",
         "game": 1
+    },
+    {
+        "id": 3,
+        "player": "Marie",
+        "firstname": "?",
+        "lastname": "?", 
+        "gender": "Female",
+        "race": "Human",
+        "job": "Médecin",
+        "from" : "Lvarlon",
+        "age": "35",
+        "background" : "",
+        "game": 3
+    },
+    {
+        "id": 4,
+        "player": "Anais",
+        "firstname": "?",
+        "lastname": "?", 
+        "gender": "Female",
+        "race": "Human",
+        "job": "Sniper",
+        "from" : "Lvarlon",
+        "age": "35",
+        "background" : "",
+        "game": 3
+    },
+    {
+        "id": 5,
+        "player": "Damien",
+        "firstname": "Ernest",
+        "lastname": "?", 
+        "gender": "Male",
+        "race": "Human",
+        "job": "Ethnologue",
+        "from" : "Lvarlon",
+        "age": "35",
+        "background" : "",
+        "game": 3
     }
 ]
