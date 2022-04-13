@@ -54,7 +54,7 @@ const Characters = () => {
         totalElement={characters.length}
         paginate={paginate}
       />
-
+      {loading && <p>Loading</p>}
       <form>
         <input
           type="text"
