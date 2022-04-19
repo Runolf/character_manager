@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import MockGames from "../../mock-datas/mock-games.json";
 import MockChar from "../../mock-datas/mock-characters.json";
 import { useParams } from "react-router-dom";

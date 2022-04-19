@@ -6,15 +6,10 @@ const Game = (props) => {
 
   return (
     <Fragment>
-      <div
-        className="gameInfo"
-        onClick={() => {
-          console.log(game.id);
-        }}
-      >
+      <div className="gameInfo">
         <a href={`/game/${game.id}`}>Link to details</a>
-        <h2>{game.name}</h2>
-        <p>{game.type}</p>
+        <h2>{game.title}</h2>
+        <p>{game.genre}</p>
       </div>
     </Fragment>
   );

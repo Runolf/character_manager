@@ -1,8 +1,9 @@
 import React, { Fragment, useEffect, useState } from "react";
 // import Theoneapi from "../../Services/theoneapi";
+import CharactersService from "../../Services/charactersService";
 import CharactersInfo from "./CharactersInfo";
 import Pagination from "../Pagination/Pagination";
-import MockChar from "../../mock-datas/mock-characters.json";
+// import MockChar from "../../mock-datas/mock-characters.json";
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -15,18 +16,20 @@ const Characters = () => {
 
   useEffect(() => {
     setLoading(true);
+
+    CharactersService.getAllCharacters().then((res) => {
+      //console.log(res);
+      setCharacters(res);
+    });
+
     /*
-        Theoneapi.getAllLOTRCharacters()
-        .then(data => {
-            setCharacters(data.docs)
-        })*/
     setCharacters(
       MockChar.filter((character) =>
         character.firstname
           .toLocaleLowerCase()
           .includes(valueSubmit.toLocaleLowerCase())
       )
-    );
+    );*/
     setLoading(false);
   }, [valueSubmit]);
 
@@ -67,7 +70,7 @@ const Characters = () => {
       </form>
 
       <div className="characterListSmartphone">
-        {currentElement.length !== 0 ? (
+        {characters !== undefined && currentElement.length !== 0 ? (
           currentElement.map((char) => {
             return <CharactersInfo key={char.id} character={char} />;
           })
