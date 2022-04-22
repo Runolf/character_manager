@@ -1,0 +1,15 @@
+.characterDetailsContainer{
+    position: relative;
+    left: 18% ;
+    top: 5rem;
+    width: 50%;
+    height: 30rem;
+    border: solid 0.5px;
+    background-color: grey;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.background{
+    text-align: justify;
+}

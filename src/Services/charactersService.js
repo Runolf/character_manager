@@ -29,6 +29,36 @@ class CharactersService {
       console.log(error);
     }
   }
+
+  static async createCharacter(data) {
+    console.log(data);
+    fetch(url, {
+      method: "post",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
+  static async updateCharacter(data) {
+    fetch(url + "/" + data.id, {
+      method: "update",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
+  static async deleteCharacter(data) {
+    fetch(url + "/" + data.id, {
+      method: "delete",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
 }
 
 export default CharactersService;

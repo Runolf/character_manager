@@ -3,6 +3,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import CharactersService from "../../Services/charactersService";
 import CharactersInfo from "./CharactersInfo";
 import Pagination from "../Pagination/Pagination";
+import { Link } from "react-router-dom";
 // import MockChar from "../../mock-datas/mock-characters.json";
 
 const Characters = () => {
@@ -12,24 +13,22 @@ const Characters = () => {
   //for pagination
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [elementPerPage] = useState(30);
+  const [elementPerPage] = useState(3);
 
   useEffect(() => {
     setLoading(true);
 
     CharactersService.getAllCharacters().then((res) => {
       //console.log(res);
-      setCharacters(res);
+      setCharacters(
+        res.filter((character) =>
+          character.firstname
+            .toLocaleLowerCase()
+            .includes(valueSubmit.toLocaleLowerCase())
+        )
+      );
     });
 
-    /*
-    setCharacters(
-      MockChar.filter((character) =>
-        character.firstname
-          .toLocaleLowerCase()
-          .includes(valueSubmit.toLocaleLowerCase())
-      )
-    );*/
     setLoading(false);
   }, [valueSubmit]);
 
@@ -68,7 +67,7 @@ const Characters = () => {
           placeholder="Search a character by his firstname"
         />
       </form>
-
+      <Link to="/createcharacter">Create a character</Link>
       <div className="characterListSmartphone">
         {characters !== undefined && currentElement.length !== 0 ? (
           currentElement.map((char) => {

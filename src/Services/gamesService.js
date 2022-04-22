@@ -41,6 +41,25 @@ class GamesService {
       },
     });
   }
+
+  static async updateGame(data) {
+    await fetch(url + "games/" + data.id, {
+      method: "update",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
+
+  static deleteGame(data) {
+    fetch(url + "/games/" + data.id, {
+      method: "delete",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  }
 }
 
 export default GamesService;

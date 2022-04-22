@@ -7,7 +7,8 @@ import NotFound from "./Components/Pages/notFound";
 import GameDetails from "./Components/Games/GameDetails";
 import GameApi from "./Components/Games/gameAPI";
 import CreateGame from "./Components/Pages/CreateGame";
-
+import CreateCharacter from "./Components/Characters/CreateCharacter";
+import UpdateCharacter from "./Components/Characters/updateCharacter";
 const style = {
   margin: "1rem",
   textDecoration: "none",
@@ -44,6 +45,11 @@ const Routeur = () => {
           <Route
             path="/characters/:idCharacter"
             element={<CharacterDetails />}
+          />
+          <Route path="/createcharacter" element={<CreateCharacter />} />
+          <Route
+            path="/updatecharacter/:idCharacter"
+            element={<UpdateCharacter />}
           />
           <Route path="/game/:idGame" element={<GameDetails />} />
 
