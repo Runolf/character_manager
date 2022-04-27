@@ -1,9 +1,11 @@
-const url = "http://localhost:3000/api/v1/";
-// const url = "https://rp-character-manager-api.herokuapp.com/api/v1/";
+import Urls from "./urls";
+
+const url = Urls.url() + "games";
+
 class GamesService {
   static async getAllGames() {
     try {
-      const res = await fetch(url + "games", {
+      const res = await fetch(url, {
         method: "get",
         headers: {
           "Content-Type": "application/json",
@@ -18,7 +20,7 @@ class GamesService {
 
   static async getOneGames(id) {
     try {
-      const res = await fetch(url + "games/" + id, {
+      const res = await fetch(url + "/" + id, {
         method: "get",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +35,7 @@ class GamesService {
   static createGame(data) {
     //  "X-CSRF-Token": token,
     console.log(data);
-    fetch(url + "games", {
+    fetch(url, {
       method: "post",
       body: JSON.stringify(data),
       headers: {
@@ -43,7 +45,7 @@ class GamesService {
   }
 
   static async updateGame(data) {
-    await fetch(url + "games/" + data.id, {
+    await fetch(url + "/" + data.id, {
       method: "update",
       body: JSON.stringify(data),
       headers: {
@@ -53,7 +55,7 @@ class GamesService {
   }
 
   static deleteGame(data) {
-    fetch(url + "/games/" + data.id, {
+    fetch(url + "/" + data.id, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",

@@ -1,5 +1,6 @@
-const url = "http://localhost:3000/api/v1/characters";
-//const url = "https://rp-character-manager-api.herokuapp.com/api/v1/characters";
+import urls from "./urls";
+
+const url = urls.url() + "characters";
 
 class CharactersService {
   static async getAllCharacters() {
