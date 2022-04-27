@@ -1,5 +1,5 @@
-//const url = "http://localhost:3000/api/v1/";
-const url = "https://rp-character-manager-api.herokuapp.com/api/v1/";
+const url = "http://localhost:3000/api/v1/";
+// const url = "https://rp-character-manager-api.herokuapp.com/api/v1/";
 class GamesService {
   static async getAllGames() {
     try {
@@ -24,10 +24,9 @@ class GamesService {
           "Content-Type": "application/json",
         },
       });
-
       return res.json();
     } catch (error) {
-      console.log(error);
+      console.log(error.message);
     }
   }
 
