@@ -8,12 +8,6 @@ import CharacterDetails from "../Characters/CharacterDetails";
 const GameDetails = () => {
   const { idGame } = useParams();
 
-  //let gameObj = MockGames.filter((game) => game.id === parseInt(idGame))[0];
-
-  //let charGame = MockChar.filter((char) => char.game === parseInt(idGame));
-
-  //console.log(idGame);
-
   let gameObj = useOneGame(idGame);
 
   return (
