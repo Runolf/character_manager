@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "./Pagination.css";
 
 const Pagination = ({ elementPerPage, totalElement, paginate }) => {
   const pageNumbers = [];
