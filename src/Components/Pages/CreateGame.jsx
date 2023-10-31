@@ -34,6 +34,7 @@ const CreateGame = () => {
     };
     console.log(datas);
     GamesService.createGame(datas);
+    // /!\ ADD REDIRECTION IF OK
   };
 
   return (

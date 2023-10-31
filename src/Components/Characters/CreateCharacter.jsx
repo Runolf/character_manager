@@ -73,6 +73,7 @@ const CreateCharacter = () => {
     };
     //console.log(datas);
     CharactersService.createCharacter(datas);
+    // /!\ ADD REDIRECTION IF OK
   };
 
   return (
@@ -98,6 +99,7 @@ const CreateCharacter = () => {
         <input type="number" placeholder="Age" onChange={handleAge} />
         <br />
 
+        {/* /!\ ADD THE LIMITE OF 500 CHAR */}
         <textarea
           type=""
           placeholder="enter your background here"
