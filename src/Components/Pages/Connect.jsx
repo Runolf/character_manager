@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react";
-import Users from "../../mock-datas/mock-users.json";
+import UsersServices from "../../Services/usersServices";
 
 const Connect = (props) => {
-  const [users] = useState(Users);
 
   let [pseudo, setPseudo] = useState();
   let [pwd, setPwd] = useState();
+  let [statusCode, setStatusCode] = useState();
 
   let [connectUser, setConnectUser] = useState({
     pseudo: "",
@@ -20,32 +20,38 @@ const Connect = (props) => {
     setPwd(e.target.value);
   };
 
-  const isUserExists = (userTryConnect) => {
-    if (userTryConnect !== undefined) {
-      let guy = users.find((user) => user.pseudo === userTryConnect.pseudo);
-      // console.log(userTryConnect)
-      if (guy !== undefined) {
-        if (guy.pwd === userTryConnect.pwd) {
-          sessionStorage.setItem("isGoodUser", true);
-          return true;
-        }
+  const isUserExists = (status) => {
+    if (status !== undefined) {
+      if(status == "200") { 
+        sessionStorage.setItem("isGoodUser", true);
+        window.location.reload();
       }
-
-      return false;
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setConnectUser({
-      pseudo: pseudo,
-      pwd: pwd,
-    });
+
+    let body = {user:{
+        pseudo: pseudo,
+        password: pwd,
+      }
+    }
+
+    setConnectUser(body);
 
     if (connectUser !== undefined) {
-      if (isUserExists(connectUser)) {
-        window.location.reload();
-      }
+      UsersServices.connectUser(connectUser).then(result => {
+      console.log('in then');
+      console.log(result);
+      setStatusCode(result);
+    });
+
+    console.log("statusCode state");
+    console.log(statusCode);
+
+    isUserExists(statusCode);
+    
     }
   };
 
@@ -58,8 +64,6 @@ const Connect = (props) => {
         <br />
         <input type="button" value="Submit" onClick={handleSubmit} />
       </form>
-
-      {connectUser ? connectUser.pseudo : <p>nope</p>}
     </Fragment>
   );
 };
