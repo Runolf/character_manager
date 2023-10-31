@@ -73,7 +73,8 @@ const CreateCharacter = () => {
     };
     //console.log(datas);
     CharactersService.createCharacter(datas);
-    // /!\ ADD REDIRECTION IF OK
+    
+    window.location.replace("http://localhost:3001/characters");
   };
 
   return (

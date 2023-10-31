@@ -34,7 +34,8 @@ const CreateGame = () => {
     };
     console.log(datas);
     GamesService.createGame(datas);
-    // /!\ ADD REDIRECTION IF OK
+
+    window.location.replace("http://localhost:3001");
   };
 
   return (
