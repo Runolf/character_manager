@@ -26,12 +26,14 @@ const CreateAccount = (props) => {
         let body = {user:{
             pseudo: pseudo,
             password: pwd,
-            emai: email
+            email: email
           }
         }
-
-        console.log(body)
+        
+        let res = UsersServices.createUser(body);
+        console.log(res);
     }
+
     return (
         <Fragment>
         <form>
