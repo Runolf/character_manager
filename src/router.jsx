@@ -9,6 +9,8 @@ import GameApi from "./Components/Games/gameAPI";
 import CreateGame from "./Components/Pages/CreateGame";
 import CreateCharacter from "./Components/Characters/CreateCharacter";
 import UpdateCharacter from "./Components/Characters/updateCharacter";
+import CreateAccount from "./Components/Pages/CreateAccount";
+
 const style = {
   margin: "1rem",
   textDecoration: "none",
@@ -40,6 +42,7 @@ const Routeur = () => {
 
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/create_account" element={<CreateAccount/>} />
 
           <Route path="/characters" element={<Characters />} />
           <Route

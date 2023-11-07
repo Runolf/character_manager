@@ -28,7 +28,9 @@ const Connect = (props) => {
       }
     }
   };
-
+  const handleGoCreateAccount = () => {
+    window.location.replace("/create_account")
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -63,6 +65,7 @@ const Connect = (props) => {
         <input type="password" placeholder="password" onChange={handlerPwd} />
         <br />
         <input type="button" value="Submit" onClick={handleSubmit} />
+        <input type="button" value="No account?" onClick={handleGoCreateAccount}/>
       </form>
     </Fragment>
   );
