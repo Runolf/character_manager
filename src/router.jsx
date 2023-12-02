@@ -10,6 +10,7 @@ import CreateGame from "./Components/Pages/CreateGame";
 import CreateCharacter from "./Components/Characters/CreateCharacter";
 import UpdateCharacter from "./Components/Characters/updateCharacter";
 import CreateAccount from "./Components/Pages/CreateAccount";
+import UsersServices from "./Services/usersServices";
 
 const style = {
   margin: "1rem",
@@ -18,6 +19,15 @@ const style = {
 };
 
 const Routeur = () => {
+
+let user = UsersServices.getConnectedUser();
+
+if(user){
+  console.log(user);
+}else{
+  console.log("no user");
+}
+
   const deconnect = () => {
     sessionStorage.removeItem("isGoodUser");
     window.location.reload();

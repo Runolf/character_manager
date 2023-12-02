@@ -1,0 +1,9 @@
+.navContainer{
+    background-color: brown;
+    display: block;
+    direction: e;
+}
+
+.navNumbers{
+ background-color: blueviolet;   
+}

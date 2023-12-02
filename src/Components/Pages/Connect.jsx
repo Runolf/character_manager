@@ -20,16 +20,18 @@ const Connect = (props) => {
     setPwd(e.target.value);
   };
 
-  const isUserExists = (status) => {
+  const isUserExists = (status, body) => {
     if (status !== undefined) {
       if(status == "200") { 
         sessionStorage.setItem("isGoodUser", true);
-        window.location.reload();
+        sessionStorage.setItem("user", JSON.stringify(body));
+        //window.location.reload();
       }
     }
   };
+
   const handleGoCreateAccount = () => {
-    window.location.replace("/create_account")
+    window.location.replace("/create_account");
   }
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,16 +45,23 @@ const Connect = (props) => {
     setConnectUser(body);
 
     if (connectUser !== undefined) {
+      
+      /*
       UsersServices.connectUser(connectUser).then(result => {
       console.log('in then');
-      console.log(result);
-      setStatusCode(result);
+      console.log(result.json());
+      setStatusCode(result.status);
     });
+    */
+    let dude = UsersServices.connectUser(connectUser);
+    console.log(dude);
+    
+    //console.log("statusCode state");
+    //console.log(statusCode);
 
-    console.log("statusCode state");
-    console.log(statusCode);
-
-    isUserExists(statusCode);
+    //isUserExists(statusCode, body);
+    //let user = JSON.parse(sessionStorage.getItem("user"));
+   // console.log(user);
     
     }
   };

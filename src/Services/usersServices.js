@@ -1,11 +1,19 @@
 import urls from "./urls";
 
 const url = urls.url() + "users";
+let user = {
+    id: "",
+    pseudo: "",
+    email: "",
+    isadmin: ""
+}
 
 class UsersServices {
     static connectUser(data){
         try {
-         var res = fetch(url+"/connect", {
+
+            
+        let res = fetch(url+"/connect", {
                 method: "post",
                 mode: "cors",
                 body: JSON.stringify(data),
@@ -14,13 +22,20 @@ class UsersServices {
                     "Accept": "*/*"
                 },
             });
-            
-            return res.then((res => {
-                return res.status;
-            }))
+
+            let datas = res.then((dude) => {
+                user.id = dude.id;
+                user.pseudo = dude.pseudo;
+                user.isadmin = dude.isadmin;
+                user.email = dude.email;
+
+                return user;
+            });
+
+            return datas;
         } catch (error) {
             console.log("CONNECTION FAILED");
-            console.log(data);
+            console.log(error.message);
         }
     }
 
@@ -40,6 +55,13 @@ class UsersServices {
         } catch (error) {
             console.log("CREATION FAILED");
             console.log(error);
+        }
+    }
+
+    static getConnectedUser(){
+        let user = sessionStorage.getItem("user");
+        if(user !== undefined){
+            return JSON.parse(user);
         }
     }
 }
